@@ -1,14 +1,16 @@
-package io.github.hyuwah.restphoto;
+package io.github.hyuwah.restphoto.interfaces;
 
 import java.util.List;
 
+import io.github.hyuwah.restphoto.models.Photo;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
-import retrofit2.http.Query;
 
 /**
  * Created by hyuwah on 03/01/18.
+ * API interface for retrofit 2
+ * see https://jsonplaceholder.typicode.com/ for Documentation
  */
 
 public interface PhotoService {

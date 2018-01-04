@@ -1,9 +1,10 @@
-package io.github.hyuwah.restphoto;
+package io.github.hyuwah.restphoto.models;
 
 import com.google.gson.annotations.SerializedName;
 
 /**
  * Created by hyuwah on 03/01/18.
+ * Photo model for photo object
  */
 
 public class Photo {

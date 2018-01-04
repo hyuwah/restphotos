@@ -1,3 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <resources>
     <string name="app_name">RestPhoto</string>
+    <string name="API_BASE_URL">https://jsonplaceholder.typicode.com/</string>
+    <string name="photos_thumbnail">photos thumbnail</string>
+    <string name="btn_get_single_photo">Get Single Photo</string>
+    <string name="btn_get_multiple_photo">Get Multiple Photo</string>
 </resources>

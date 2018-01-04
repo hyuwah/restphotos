@@ -1,11 +1,11 @@
-package io.github.hyuwah.restphoto;
+package io.github.hyuwah.restphoto.activities;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.TabHost;
+
+import io.github.hyuwah.restphoto.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnGetSingle = (Button) findViewById(R.id.btnSingle);
-        btnGetMultiple = (Button) findViewById(R.id.btnMany);
+        btnGetSingle = (Button) findViewById(R.id.button_get_single);
+        btnGetMultiple = (Button) findViewById(R.id.button_get_multiple);
 
         btnGetSingle.setOnClickListener(view->{
             Intent intent = new Intent(this, GetSingleActivity.class);
