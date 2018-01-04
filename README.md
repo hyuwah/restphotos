@@ -1,6 +1,8 @@
-# RestPhoto
+# RestPhotos
 
 Simple Android App to learn concept about consuming API with retrofit, image fetching with Picasso and RecyclerView 
+
+![Preview](https://res.cloudinary.com/hyuwah-github-io/image/upload/v1515050026/restphotos_init.gif)
 
 ## Info & Dependencies
 
@@ -15,8 +17,8 @@ Simple Android App to learn concept about consuming API with retrofit, image fet
 API provided by https://jsonplaceholder.typicode.com/
 
 Endpoint used:
-1. `photos`
-2. `photos/{id}`
+1. GET `photos`
+2. GET `photos/{id}`
 
 _id: 0 - 5000_
 
