@@ -46,9 +46,7 @@ public class PhotosAdapter extends RecyclerView.Adapter<PhotosAdapter.ViewHolder
                     .placeholder(R.drawable.img_placeholder)
                     .fit()
                     .into(holder.ivThumbnail);
-
         }
-
     }
 
     @Override
@@ -68,7 +66,6 @@ public class PhotosAdapter extends RecyclerView.Adapter<PhotosAdapter.ViewHolder
             this.tvId = view.findViewById(R.id.item_photo_txt_id);
             this.tvTitle = view.findViewById(R.id.item_photo_txt_title);
             this.ivThumbnail = view.findViewById(R.id.item_photo_image_thumbnail);
-
         }
     }
 
@@ -76,7 +73,6 @@ public class PhotosAdapter extends RecyclerView.Adapter<PhotosAdapter.ViewHolder
         View itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.item_photo, parent, false);
         return new ViewHolder(itemView);
-
     }
 
 

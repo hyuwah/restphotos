@@ -39,11 +39,8 @@ public class GetMultipleActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_multiple);
-
         setupView();
-
         fetchPhotos();
-
     }
 
     /**
@@ -83,16 +80,11 @@ public class GetMultipleActivity extends AppCompatActivity {
                 Toast.makeText(getBaseContext(), "Received " + response.body().size() + " Data", Toast.LENGTH_SHORT).show();
                 if (response.isSuccessful()) {
                     List<Photo> lp = response.body();
-
-
                     for (Photo photoItem : lp) {
                         if (BuildConfig.DEBUG) Log.d(TAG, "onResponse: " + photoItem.toString());
-
                         photoList.add(photoItem);
                     }
-
                     photosAdapter.notifyDataSetChanged();
-
                 }
             }
 

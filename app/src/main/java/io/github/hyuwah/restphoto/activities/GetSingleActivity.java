@@ -35,16 +35,12 @@ public class GetSingleActivity extends AppCompatActivity {
     RecyclerView rvPhoto;
     private static PhotosAdapter photosAdapter;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_single);
-
         setupView();
-
         fetchPhoto();
-
     }
 
     /**
@@ -80,22 +76,16 @@ public class GetSingleActivity extends AppCompatActivity {
                 Toast.makeText(getBaseContext(), "Received 1 Data", Toast.LENGTH_SHORT).show();
                 if (response.isSuccessful()) {
                     Photo photo = response.body();
-
                     if (BuildConfig.DEBUG) Log.d(TAG, "onResponse: " + photo.toString());
-
                     photoList.add(photo);
-
                     photosAdapter.notifyDataSetChanged();
-
                 }
             }
 
             @Override
             public void onFailure(Call<Photo> call, Throwable t) {
                 pbSpinner.setVisibility(View.GONE);
-
                 Toast.makeText(getBaseContext(), "Failed to fetch data", Toast.LENGTH_SHORT).show();
-
             }
         });
 

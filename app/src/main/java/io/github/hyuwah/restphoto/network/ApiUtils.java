@@ -1,8 +1,5 @@
 package io.github.hyuwah.restphoto.network;
 
-import android.content.res.Resources;
-
-import io.github.hyuwah.restphoto.R;
 import io.github.hyuwah.restphoto.interfaces.PhotoService;
 
 /**
@@ -12,7 +9,7 @@ import io.github.hyuwah.restphoto.interfaces.PhotoService;
 
 public class ApiUtils {
 
-    public static final String BASE_URL = Resources.getSystem().getString(R.string.API_BASE_URL);
+    public static final String BASE_URL = "https://jsonplaceholder.typicode.com/";
 
     public static PhotoService getPhotos() {
         return RetrofitClient.getClient(BASE_URL).create(PhotoService.class);
