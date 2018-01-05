@@ -13,7 +13,7 @@ import retrofit2.http.Path;
  * see https://jsonplaceholder.typicode.com/ for Documentation
  */
 
-public interface PhotoService {
+public interface IPhotoService {
     @GET("photos")
     Call<List<Photo>> getPhotos();
 

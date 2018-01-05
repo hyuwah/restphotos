@@ -36,7 +36,7 @@ public class PhotosAdapter extends RecyclerView.Adapter<PhotosAdapter.ViewHolder
         Photo currentPhoto = photoList.get(position);
         holder.tvAlbumId.setText("Album Id : " + Integer.toString(currentPhoto.get_albumId()));
         holder.tvId.setText("Id : " + Integer.toString(currentPhoto.get_id()));
-        holder.tvTitle.setText("Title : " + currentPhoto.get_title());
+        holder.tvTitle.setText(currentPhoto.get_title());
 
         // Rendering with Picasso
         if (!TextUtils.isEmpty(currentPhoto.get_thumbnailUrl())) {

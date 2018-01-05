@@ -15,7 +15,7 @@ import java.util.List;
 
 import io.github.hyuwah.restphoto.BuildConfig;
 import io.github.hyuwah.restphoto.network.ApiUtils;
-import io.github.hyuwah.restphoto.interfaces.PhotoService;
+import io.github.hyuwah.restphoto.interfaces.IPhotoService;
 import io.github.hyuwah.restphoto.adapters.PhotosAdapter;
 import io.github.hyuwah.restphoto.R;
 import io.github.hyuwah.restphoto.models.Photo;
@@ -27,7 +27,7 @@ public class GetMultipleActivity extends AppCompatActivity {
 
     private static final String TAG = GetMultipleActivity.class.getSimpleName();
 
-    private PhotoService apiService;
+    private IPhotoService apiService;
     ProgressBar pbSpinner;
 
     // RecyclerView

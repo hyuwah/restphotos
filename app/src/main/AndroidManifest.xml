@@ -26,12 +26,21 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.MainActivity" />
         </activity>
-        <activity android:name=".activities.GetMultipleActivity"
+        <activity
+            android:name=".activities.GetMultipleActivity"
             android:label="Get Multiple Photo"
             android:parentActivityName=".activities.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activities.MainActivity"/>
+                android:value=".activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.RobohashActivity"
+            android:label="Generate Profile Image"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.RobohashActivity"/>
         </activity>
     </application>
 

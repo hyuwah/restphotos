@@ -27,6 +27,15 @@
             android:paddingRight="16dp">
 
             <TextView
+                android:id="@+id/item_photo_txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Title" />
+
+            <TextView
                 android:id="@+id/item_photo_txt_album_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -37,12 +46,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 tools:text="Id" />
-
-            <TextView
-                android:id="@+id/item_photo_txt_title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                tools:text="Title" />
 
         </LinearLayout>
 

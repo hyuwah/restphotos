@@ -5,4 +5,10 @@
     <string name="photos_thumbnail">photos thumbnail</string>
     <string name="btn_get_single_photo">Get Single Photo</string>
     <string name="btn_get_multiple_photo">Get Multiple Photo</string>
+    <string-array name="ROBOHASH_STYLE_SET">
+        <item>Robot</item>
+        <item>Monster</item>
+        <item>Robot Head</item>
+        <item>Cat</item>
+    </string-array>
 </resources>
